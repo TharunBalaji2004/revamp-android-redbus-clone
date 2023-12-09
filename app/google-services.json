@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "785287880375",
+    "project_id": "android-redbus-clone",
+    "storage_bucket": "android-redbus-clone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785287880375:android:99ddb2a26a850de0adf732",
+        "android_client_info": {
+          "package_name": "com.tharunbalaji.android_redbus_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY33T9vzaHajvZxqoY9rV8rK74QiUKkjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
