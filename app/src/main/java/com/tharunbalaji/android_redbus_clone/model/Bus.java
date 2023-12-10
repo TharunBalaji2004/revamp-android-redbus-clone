@@ -1,64 +1,80 @@
 package com.tharunbalaji.android_redbus_clone.model;
 
 public class Bus {
-    private String etBusName, etBusType, etStartingTime, etEndingTime, etTicketPrice, etTotalSeats;
+    private String busName, busType, startingTime, endingTime, ticketPrice, totalSeats,startingLocation,destination;
 
-    public String getEtBusName() {
-        return etBusName;
+    public Bus(String busName, String busType, String startingTime, String endingTime, String ticketPrice, String totalSeats, String startingLocation, String destination) {
+        this.busName = busName;
+        this.busType = busType;
+        this.startingTime = startingTime;
+        this.endingTime = endingTime;
+        this.ticketPrice = ticketPrice;
+        this.totalSeats = totalSeats;
+        this.startingLocation = startingLocation;
+        this.destination = destination;
     }
 
-    public void setEtBusName(String etBusName) {
-        this.etBusName = etBusName;
+    public String getBusName() {
+        return busName;
     }
 
-    public String getEtBusType() {
-        return etBusType;
+    public void setBusName(String busName) {
+        this.busName = busName;
     }
 
-    public void setEtBusType(String etBusType) {
-        this.etBusType = etBusType;
+    public String getBusType() {
+        return busType;
     }
 
-    public String getEtStartingTime() {
-        return etStartingTime;
+    public void setBusType(String busType) {
+        this.busType = busType;
     }
 
-    public void setEtStartingTime(String etStartingTime) {
-        this.etStartingTime = etStartingTime;
+    public String getStartingTime() {
+        return startingTime;
     }
 
-    public String getEtEndingTime() {
-        return etEndingTime;
+    public void setStartingTime(String startingTime) {
+        this.startingTime = startingTime;
     }
 
-    public void setEtEndingTime(String etEndingTime) {
-        this.etEndingTime = etEndingTime;
+    public String getEndingTime() {
+        return endingTime;
     }
 
-    public String getEtTicketPrice() {
-        return etTicketPrice;
+    public void setEndingTime(String endingTime) {
+        this.endingTime = endingTime;
     }
 
-    public void setEtTicketPrice(String etTicketPrice) {
-        this.etTicketPrice = etTicketPrice;
+    public String getTicketPrice() {
+        return ticketPrice;
     }
 
-    public String getEtTotalSeats() {
-        return etTotalSeats;
+    public void setTicketPrice(String ticketPrice) {
+        this.ticketPrice = ticketPrice;
     }
 
-    public void setEtTotalSeats(String etTotalSeats) {
-        this.etTotalSeats = etTotalSeats;
+    public String getTotalSeats() {
+        return totalSeats;
     }
 
-    public Bus(String etBusName, String etBusType, String etStartingTime, String etEndingTime, String etTicketPrice, String etTotalSeats) {
-        this.etBusName = etBusName;
-        this.etBusType = etBusType;
-        this.etStartingTime = etStartingTime;
-        this.etEndingTime = etEndingTime;
-        this.etTicketPrice = etTicketPrice;
-        this.etTotalSeats = etTotalSeats;
+    public void setTotalSeats(String totalSeats) {
+        this.totalSeats = totalSeats;
+    }
 
+    public String getStartingLocation() {
+        return startingLocation;
+    }
 
+    public void setStartingLocation(String startingLocation) {
+        this.startingLocation = startingLocation;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 }

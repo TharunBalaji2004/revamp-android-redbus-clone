@@ -2,6 +2,7 @@ package com.tharunbalaji.android_redbus_clone;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,14 @@ public class HomeActivity extends AppCompatActivity {
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String from = etFrom.getText().toString();
+                String to = etTo.getText().toString();
 
+                Intent intent = new Intent(HomeActivity.this, SearchActivity.class);
+                intent.putExtra("from", from);
+                intent.putExtra("to", to);
+
+                startActivity(intent);
             }
         });
     }
